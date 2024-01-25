@@ -5,7 +5,10 @@ description = "Add your description here"
 authors = [
     { name = "Reto Trappitsch", email = "reto@galactic-forensics.space" }
 ]
-dependencies = []
+dependencies = [
+    "numpy>=1.26.3",
+    "streamlit>=1.30.0",
+]
 readme = "README.md"
 requires-python = ">= 3.11"
 license = { text = "MIT" }
@@ -19,7 +22,17 @@ build-backend = "hatchling.build"
 
 [tool.rye]
 managed = true
-dev-dependencies = []
+dev-dependencies = [
+    "pytest>=7.4.4",
+    "ruff>=0.1.14",
+    "hypothesis>=6.97.0",
+]
+
+[tool.rye.scripts]
+format = "ruff format ."
+lint = "ruff check ."
+serve = "streamlit run src/lbo_bbo_angle/app.py"
+test = "pytest ."
 
 [tool.hatch.metadata]
 allow-direct-references = true
