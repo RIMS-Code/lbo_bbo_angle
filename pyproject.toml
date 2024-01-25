@@ -31,7 +31,7 @@ dev-dependencies = [
 [tool.rye.scripts]
 format = "ruff format ."
 lint = "ruff check ."
-serve = "streamlit run src/lbo_bbo_angle/app.py"
+serve = "streamlit run streamlit_app.py"
 test = "pytest ."
 
 [tool.hatch.metadata]
