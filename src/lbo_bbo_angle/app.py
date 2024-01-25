@@ -2,7 +2,7 @@
 
 import streamlit as st
 
-from lbo_bbo_angle.calc import second_harmonic_lbo, third_harmonic_bbo
+from .calc import second_harmonic_lbo, third_harmonic_bbo
 
 st.title("Crystal calculations for second and third harmonic generation")
 

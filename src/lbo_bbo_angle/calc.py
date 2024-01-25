@@ -8,7 +8,7 @@ between the closest wavelengths.
 
 import numpy as np
 
-from lbo_bbo_angle.data import SECOND_HARMONIC_LBO, THIRD_HARMONIC_BBO
+from .data import SECOND_HARMONIC_LBO, THIRD_HARMONIC_BBO
 
 
 def second_harmonic_lbo(wavelength: float) -> tuple[float, float]:
