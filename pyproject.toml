@@ -1,0 +1,28 @@
+[project]
+name = "lbo-bbo-angle"
+version = "0.1.0"
+description = "Add your description here"
+authors = [
+    { name = "Reto Trappitsch", email = "reto@galactic-forensics.space" }
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.11"
+license = { text = "MIT" }
+
+[project.scripts]
+hello = "lbo_bbo_angle:hello"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.rye]
+managed = true
+dev-dependencies = []
+
+[tool.hatch.metadata]
+allow-direct-references = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/lbo_bbo_angle"]
